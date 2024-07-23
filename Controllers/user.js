@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import { User } from "../model/UserSchema.js";
 
-const secretKey = "Dabbemein4098";
+const secretKey = process.env.SECRET_KEY;
 
 export const HandleUserLogin = async (req, res) => {
   const { email, password } = req.body;

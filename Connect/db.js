@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const mongoURI = "mongodb+srv://divyansh2004mhj:bOopW7iWf5WCr7zr@food-miles.5ivi1wn.mongodb.net/Food-Miles"; 
+const mongoURI = process.env.MONGO_URI;
 
 export const connectDB =() => {
     mongoose
